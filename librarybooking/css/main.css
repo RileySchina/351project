@@ -1,0 +1,313 @@
+article.HomeInfo{
+	text-align: center;
+	background-color:none;
+	padding:15px 30px;
+	margin:25px auto;
+	width:100%;
+	overflow:auto;
+	border: 0;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	}
+
+
+	
+
+article.navigation{
+	background-color:grey;
+	padding:0px;
+	margin:10px auto;
+	width:50%;
+	overflow:auto;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	}
+	
+	
+article.parks2{
+	background-color:grey;
+	padding:20px;
+	margin:10px 5px 0px 0px;
+	width:100%;
+	overflow:auto;
+	max-width:500px;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.mainContent{
+	background-color:white;
+	margin:0px 5px;
+	width:100%;
+	max-width:1000px;
+}
+.CameraDiscription {
+	margin: 200px;
+	width: 75%;
+	margin-top: 0;
+	margin-left:40px;
+	text-align: left;
+
+	/*padding-left: 20px;*/
+
+}
+
+
+	
+#news{
+		background-color:#F8F8F8;
+		margin-bottom:1em;
+}
+
+
+#contact{
+		text-align:left;
+		background-color:#F5F5F5;
+
+}
+
+#title{
+		margin-top:2em;
+		margin-left:3em;
+		margin-bottom:0em;
+		background-color:none;
+}
+
+
+
+#heading{
+		margin-top:-3em;
+		margin-left:-1em;
+		text-align:left;
+		background-color:white;
+
+}
+
+
+p.left{
+		text-align:left;
+}
+p.right{
+		text-align:right;
+}
+h2.centering{
+		text-align:center;
+}
+
+
+
+
+
+
+
+
+/*The application# has been stylized */
+h6.application {
+	color:blue;
+	padding-left: 41em;
+	margin: 0.5em;
+
+}
+/*recently chnaged*/
+h4.application2 {
+	margin: 0em;
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+/*recently chnaged*/
+.businesslicense{
+	margin-top: 0em;
+}
+
+
+article{
+	text-align: center;
+	margin: 2rem 0; 
+	padding: 2rem; 
+	border: 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+section{
+	margin:0px 5px;
+}
+
+	
+nav{
+	height: 50px;
+	font-weight:bold;
+}
+
+nav>a, nav>a:visited{
+	background-color:#F5F5F5;
+	width:80%;
+	display:inline-block;
+	color:blue;
+	padding:6px 0px;
+	margin:0 5px;
+	-webkit-transition:background-color 1s, width 0.75s;
+	transition:background-color 1s, width 0.75s;
+	
+}
+	
+nav>a:hover{
+	background-color:#DEBD8A;
+	width:95%;
+}
+
+a:visited {
+	color: #8968CD;
+}
+
+.float-left{
+	float:left;
+	margin-right:2em;
+}
+	
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px; /* keep this value in mind when we use 'rem' units */
+	padding:1em;
+	color: black;
+	background-color: white;
+}
+
+h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	font-size: 2.4rem; /* equal to 40px (16px * 2.5) */
+	margin-bottom:0em;
+    margin-top:0.6em;
+	/*margin-bottom:0.2em;
+	text-align: left;*/
+}
+
+h3 {
+	/* Here we have applied the Google font + backups */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1rem; /* equal to 40px (16px * 2.5) */
+	/*margin-top:1em;
+	text-align: center;*/
+}
+
+h2 {
+	/* We can tell things that are bold by default, not to be */
+	
+	/*font-size: 1.5rem; /* equal to 32px (16px * 2) */
+	font-size: 1.5rem; 
+	/* Note that the margin-top takes the font-size into account */
+	margin-top: 0.25em; /* equal to 8px (32px * 0.25) */
+	margin-bottom:-1.5px;
+}
+
+
+
+/* Here we specify that only when 'a' shows up in 'h2' should we apply this style */
+h2 a {
+	font-style: italic;
+}
+
+/*sub-title's font property */ 
+h4{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#484848 ;
+	font-size: 0.9rem; /* equal to 16px (16px * 1) */
+	margin-left:6em;
+	margin-bottom:1em;
+	margin-top:-0.2em;
+}
+
+
+
+/* Note that you use commas to style multiple things the same way */
+p, ul, ol {
+	font-size: 0.8em; /* make the size 12.8px (16px * 0.8) */
+	
+	/* Note that the max-width takes the font-size into account */
+	max-width: 40em; /* maximum width is now 512px (12.8px * 40) */
+	line-height: 1rem; /* line-height 16px (16px * 1em) */
+}
+
+
+
+/* Here we specify that only when 'li' shows up in 'ul' should we apply this style */
+ul li {
+	list-style-type: circle;
+}
+
+
+
+/* Here we have created a 'class' called 'no-bullet' to remove bullets from list items */
+li.no-bullet {
+	list-style-type: none;
+}
+
+img {/*styling image size and border*/
+
+	/* 
+		Then we tell it we don't want it to exceed 100% of the parent element 
+		(we make it resize with the browser window) 
+	*/
+	max-width: 100%;
+
+	/* 
+		CSS allows for some shorthand, in this case, we are specifying:
+		border: width type colour;
+	*/
+	border: 0; 
+}
+
+figure {
+	margin-left: 0; /* setting there to be no margin on the left */
+}
+
+figcaption {
+	font-size: 0.75rem;
+	font-style: italic;
+}
+
+
+
+a {
+	color: #007FFF; /* This is a HEX colour code, which can be read as #RRGGBB */
+}
+
+
+
+/* Here we are styling the 'a' tag in the 'active' and 'hover' states */
+a:active, a:hover, a:focus {
+	color: #888888; 
+	text-decoration: none;
+	/*background-color:#666666;*/
+}
+
+/*changing the background and text color of the href inks when mouse hover*/
+
+figure{/*styling elements under "figure" section*/
+	margin-left:0;
+}
+
+a:visited {
+	color: #8968CD;
+}
+
+
+ .lable_txt{
+	width:200px;
+	padding-right:10px;
+	
+	display:inline-block;
+ }
+ 
+ .input_txt{
+  width:120px;
+  /*recently changed*/
+  height:23px;
+  padding:3px;
+  margin:3px;
+  vertical-align:middle;
+
+ }
+
