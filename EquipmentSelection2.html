@@ -1,80 +1,47 @@
-<!--setting document type as html-->
-<!DOCTYPE html>
-<!-- declare the language of a Web page -->
+<!doctype html>
 <html lang="en">
 
-
-<!-- This section helps define what a browser needs to know about our webpage -->
 <head>
-	<!-- This defines what character set (language/fonts) by this webpage -->
-	<meta charset="utf-8"/>
+	<!--home page for the site-->
+	<!--import and linking of css and set html standards-->
 
-	<!-- 
-      width=device-width -  sets the width of the site to the width
-                            of the device
-      initial-scale=1.0 -   sets our initial zoom level
-    -->
-    
-	
-	<!-- This is the title of this info page -->
-	<title>Booking</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Booking Home</title>
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/grid.css">
+<!--   <link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/fonts.css">  -->
 
-	<!-- Here we are adding in our link to the CSS file for our page -->
-	<link rel="stylesheet" href="css/normalize.css"/>
-	<link rel="stylesheet" href="css/main.css"/>
-	<link rel="stylesheet" href="css/grid.css"/>	
+
 
 </head>
 
 <body>
-	<!--top head picture-->
-	<header>
-		<section>
-			<article class="BookingPage" id="title">
-				<div class = "col-1of3">
-					<!-- picture of logo -->
-				</div>
-			</article>
-		</section>
-	</header>
-		
-	
-	<!--main paragraph-->
-<div class = "col-body">
-	<!--Column #1-->
-	<div class = "col-body_1of2">
-	
-		<!--News-->
-		<section class="mainContent">
-			<div class="banner">
+	<section id = "home" class="center">
+		<div class="banner">
 			<h1>Sfu Surrey Equipment Booking</h1>
 			
 		</div>
-			<!-- <article class="HomeInfo" id= "news"> -->
-				<h2>Equipment</h2> <!-- This is a "equipment" topic  -->
-				<hr class="hr_settings"></hr>
-				<figure> 
-				<div>
-					<!-- the picture of  -->
-					<img src="http://pisces.bbystatic.com//BestBuy_US/store/ee/2016/cam/pol/evn-5578528markIV-0828.jpg;maxHeight=310;maxWidth=460" width="400" height="263"  alt="image of camera" align="left"/>
-					</div>
-					<div class="CameraDiscription">
-				
-					  			With all the features and capabilities of the EOS 5DS, the EOS 5DS R camera offers the potential for even greater sharpness and fine detail for specialized situations. It features the same Canon designed and manufactured 50.6 Megapixel sensor, with the low-pass filter* (LPF) effect cancelled to provide even more fine edge sharpness and detail for critical subjects such as detailed landscapes, and other situations where getting the sharpest subject detail is a priority.
-					  
-					</div>
-<a class="button" onclick="alert('Next page')">Book Now</a>					
+		<div>
+			<h2>Equipment</h2>
+		</div>
+		<div class="grid-row">
+			<div class = "grid-col-5of10">
 
-</div>
-				</figure>
-			</article>
-		</section>
+				<img src="http://pisces.bbystatic.com//BestBuy_US/store/ee/2016/cam/pol/evn-5578528markIV-0828.jpg;maxHeight=310;maxWidth=460">
 
-	</div>
-	</div>
-	
+			</div>
+			<div class = "grid-col-5of10">
 
+				<p>With all the features and capabilities of the EOS 5DS, the EOS 5DS R camera offers the potential for even greater sharpness and fine detail for specialized situations. It features the same Canon designed and manufactured 50.6 Megapixel sensor, with the low-pass filter* (LPF) effect cancelled to provide even more fine edge sharpness and detail for critical subjects such as detailed landscapes, and other situations where getting the sharpest subject detail is a priority.</p>
 
-		
+				<a class="button" onclick="alert('Next page')">Book Now</a>
+
+			</div>	
+		</div>
+	</section>
 </body>
+
 </html>

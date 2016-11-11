@@ -1,405 +1,72 @@
-/* This is where my grid code goes */
+/*Grid.css is taken from a tutorial from Iat 235*/
+/* 
+	This tutorial draws from "Don't Overthink Grids" available at
+	http://css-tricks.com/dont-overthink-it-grids/
+	*/
 
-[class*='col-']{
-	float:left;
-	padding:0;
-	text-align:center;
-}
-
-html{
-background: url("../img/background.jpg") no-repeat center center fixed; 
-background-color:white;
-background-repeat:repeat-x;
-background-position:bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#ScrolltoTop{ 
-	z-index:998;
-	position:fixed;  
-	bottom:50px;  
-	right:40px; 
-	
-	background-color:transparent;
-	width: 70px;
-	height: 70px;
-	border-style: none;
-	vertical-align: middle;
-}
-
-
-.hr_settings {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-width: 0px;
-    color: rgba(0, 0, 0, 0.07);
-    height: 1px;
-	width:88%;
-	text-align: center;
-    margin: 18px 20px 16px;
-}
-
-/* 2 column grid styles */
-.col-1of2{
-	position:relative;
-	text-align:left;
-	width:100%;
-	left:14%;
-	margin-top: -50px;
-	min-width:400px
-}
-
-.col-2of2{
-	position:relative;
-	text-align:left;
-	width:26%;
-	left:14.5%;
-	margin-top: -50px;
-	min-width:200px;
-}
-
-
-/* 3 column grid styles */
-/*header logo*/
-.col-1of3{
-width:33%;
-text-align:center;
-position: relative;
-left: 9%;
-margin-top: 10px
-}
-
-.col-1of3 img{
-width:auto;
-height:auto;
-}
-
-.col-1of4{
-	width:15%;
-	position: fixed;
-	top: 50%;
-	left: 20px;
-	float:left;
-}
-
-
-.col-Follow {
-	width:75%;
-	display:inline;
-	padding-left: 12.5%;
-}
-
-	.col-Follow a {
-		padding-right:20px;
-	}
-
-
-.col-NavHorizontal {
-/* 	background-image: url("../img/BG_menu.png"); */
-	background-color:#3A3A7A;
-	position:fixed;
-	z-index:1000;
-	width:100%;
-	left:0px;
-	top:0px;
-	height:41px;
-}
-
-#col-NavHorizontal_menu {
-/* 	background-image: url("../img/BG_menu.png"); */
-	background-color:#3A3A7A;
-	max-width: 675px;
-	font-weight: bold;
-	font-size: 16px; 
-    overflow: hidden;
-	list-style-type: none;
-	line-height: 18px;
-	
-   	margin-top: 2px;
-    padding: 0px ;
-}
-
-#col-NavHorizontal_menu ul {
-    list-style-type: none;
-    background:	#7C7CA6;
-	width: 200px;
-    margin: 0;
-    padding: 0;
-}
-
-#col-NavHorizontal_menu li {
-    list-style-type: none;
-	width: 200px;
-    float: left;
-}
-
-#col-NavHorizontal_menu li a {
-    display: block;
-    padding: 10px 15px;
-    color: white;
-    text-decoration: none;
-	border-right: 1px solid white;
-
-}
-#col-NavHorizontal_menu li a:hover {
-    background: #FFCC00;
-}
-
-#col-NavHorizontal_menu li ul {
-    position: absolute;
-    display: none;
-}
-
-#col-NavHorizontal_menu li:hover ul {
-    display: block;
-}
-
-#col-NavHorizontal_menu li ul li {
-    float: none;
-	width:100%;
-}
-
-#col-NavHorizontal_menu li ul li a {
-	border-top: 1px solid white;
-    border-left: 1px solid white;
-}
-
-
-.col-NavHorizontal_searchbar{
-	text-align:right;
-	right:4.5%;
-	position:absolute;
-	top:2.5px;
-}
-
-.col-NavHorizontal_searchbar button{
-	background-color:transparent;
-	width: 35px;
-	height: 35px;
-    margin: 2.5px 0px -2.5px -5px;
-	border-style: none;
-	vertical-align: middle;
-}
-
-.col-NavHorizontal_searchbar input{
-	width: 70%;
-	height: 25px;
-	border: 1px solid;
-	border-radius: 7px;
-	padding: 0px 4px 0px 4px;
-	vertical-align: middle;
-}
-
-.col-top {
-	margin-top: 10px;
-	width:90%;
-	position:relative;
-	vertical-align: middle;
-}
-
-.col-body {
-	margin-top: -40px;
-	width:100%;
-	position:relative;
-}
-
-.col-body_1of2 {
-	vertical-align: middle;
-	width:100%;
-	float:left;
-	margin: 0px 0px 0px 14%;
-}
-
-.col-body_1of2_contact {
-	vertical-align: middle;
-	width:80%;
-	float:left;
-	margin: 0px 0px 0px 14%;
-}
-
-
-.col-body_1of2_contact h1 {
-	font-size: 1.5rem;
-	color:#47476B;
-	width:100%;
-	float:left;
-	text-align: left;
-	margin-bottom:0.5em;
-	position:relative;
-	text-decoration: underline;
-}
-
-
-.col-body_1of2_contact h5 {
-	color:black;
-	vertical-align: middle;
-	width:40%;
-	float:left;
-	margin: 0px 0px -3px 30%;
-}
-
-.col-body_1of2_park {
-	vertical-align: middle;
-	width:40%;
-	float:left;
-	margin: 0px 0px 0px 14%;
-}
-
-
-.col-body_1of2_park img{
-	width:auto;
-	height:auto;
-} 
-
-.col-body_1of2_park h2{
-	margin-bottom:1em;
-}
-
-
-
-.col-body_1of2 h2 {
-	font-weight:normal;
-	font-size:1.5em;
-}
-
-.col-body_1of2 img,.col-body_2of2 img {
-	width:auto;
-	height:auto;
-}
-
-
-.col-body_1of2 p {
-	font-weight:normal;
-	margin-bottom:-1%;
-	text-align: center;
-}
-
-.col-body_1of2 h1 {
-	font-weight:normal;
-	font-size:1.5em;
-}
-
-
-.col-body_2of2 {
-	vertical-align: middle;
-	width:30%;
-	float:left;
-	margin: 0px 0px 0px 1%;
-}
-
-.col-body_2of2 h2 {
-	font-weight:normal;
-	font-size:1.5em;
-}
-
-.col-body_2of2 p {
-	font-weight:normal;
-	margin-bottom:-1%;
-	text-align: center;
-}
-
-.col-body_1of2_p {
-	position:relative;
-	text-align:left;
-	vertical-align: middle;
-	width:40%;
-	float:left;
-	margin: 0px 0px 0px 14%;
-}
-
-.col-body_2of2_p {
-	position:relative;
-	text-align:left;
-	vertical-align: middle;
-	width:40%;
-	float:left;
-	margin: 25px 0px 0px -3%;
-}
-
-.col-bottom {
-	margin-top: 50px;
-	width:70%;
-	position:relative;
-	background-color:#F8F8F8;
-	padding:10px;
-	overflow:auto;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-}
-}
-
-.col-1of8{
-	width:17.5%;	
-}
-
-.col-3of4{
-	width:75%;
-}
-
-.grid:after{
-	 content:" ";
-	 display:block;
-	 clear:both;
-}
 
 /*
 	With this selector, we are specifying that all objects use
 	the border-box model (not the content-box model)
-*/
-*, *:after, *:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-
-/* responsive stuff with media queries */
-
-@media (max-width:300px){
-
-	.col-1of3{
-			width:100%;
-		}
-
-@media (max-width:480px){
-
-	 .col-2of3{
-			width:100%;
-		}
-		
-		.col-1of2{
-			width:100%;
-		}
-		.col-1of4,.col-3of4{
-			width:100%;
-		}
+	*/
+	*, *:after, *:before {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 
-@media (max-width:600px){
-
-		.col-body_1of2_p,.col-body_2of2_p{
-			width:100%;
-	}
-}
-
-@media (max-width: 1000px) {
-
-	.col-NavHorizontal{
-		width: 100%;
-	}
-
-}
 
 /*
-	Here using @media queries, we are specifying when the display
-	has a width less than 800px it should collapse the 2 columns 
-	into one stack (hence width: 100%)
-*/
-@media (max-width: 800px) {
+	Here we are using a 'fancy' css selector that is 
+	specifying if the class of an item starts with
+	'grid-col-', then we should apply the styling listed
+	*/
+	[class^='grid-col-'] {
+		float: left;
+		padding: 0; 
+		text-align: center; /* center the content in this block by default */
+	}
 
-	.col-body_1of2, .col-body_2of2,.col-body_1of2_p,.col-body_2of2_p  {
+
+/*
+	Here we are defining our default column widths with the intention
+	of keeping it 'mobile first'
+	*/
+	.grid-col-1of3, .grid-col-5of10, .grid-col-2of10, .grid-col-1of4, .grid-col-3of4 {
 		width: 100%;
 	}
+
+
+
+
+/*
+	Here we are clearing floated items to ensure that
+	our 'grid' structure can have different rows
+	*/
+	.grid-row:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+
+
+/*
+	Using further @media queries, we specify that at a width of
+	less than 30em it should collapse the 2/10 columns into one stack
+
+	Think of this as saying, when display width > 30em, apply this
+	*/
+
+/*at specific widths the grid will make changes to the site including replacing images
+making changes in css classes, and resizing the columns*/
+@media (min-width: 10em){
+	.grid-col-5of10{
+		width:50%;
+	}
 }
+
+
+
+
+
