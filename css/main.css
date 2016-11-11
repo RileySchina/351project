@@ -3,76 +3,165 @@ input {
   font-size: 1.2em;
 }
 .button-home {
-    display: inline-block;
-    padding: 1em;
-    color: #FFF;
-    background-color: #62929e;
-    border-radius: 0.25em;
-    font-size: 3em;
-    text-decoration: none;
-    margin-top: .5em;
-    margin-bottom: .5em;
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-    /*controls the look and spacing of buttons*/
+  display: inline-block;
+  padding: 1em;
+  color: #FFF;
+  background-color: #62929e;
+  border-radius: 0.25em;
+  font-size: 3em;
+  text-decoration: none;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  /*controls the look and spacing of buttons*/
+}
+
+.button-home:hover, .button-home:focus {
+  background-color: #546a7b;
+  /*on hover or focus the buttons change color*/
+}
+
+.center {
+  text-align: center;
+
+}
+.banner {
+  background-color: #fdfdff;
+  padding: 1em;
+  margin-left: -1.5em;
+  margin-right: -1.5em;
+}
+.para-home {
+  width: 25em;
+  text-align: center;
+  display: inline-block;
+  padding-top: 0;
+}
+
+.button-book {
+  display: inline-block;
+  padding: 1em;
+  color: #FFF;
+  background-color: #62929e;
+  border-radius: 0.25em;
+  font-size: 1em;
+  text-decoration: none;
+  margin-top: 12em;
+  margin-bottom: .5em;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  /*controls the look and spacing of buttons*/
+}
+
+.button-book:hover, .button-book:focus {
+  background-color: #546a7b;
+  /*on hover or focus the buttons change color*/
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  padding: 1em;
+  background-color: #c6c5b9;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+img {/*styling image size and border*/
+
+  /* 
+    Then we tell it we don't want it to exceed 100% of the parent element 
+    (we make it resize with the browser window) 
+    */
+    max-width: 100%;
+
+  /* 
+    CSS allows for some shorthand, in this case, we are specifying:
+    border: width type colour;
+    */
+    border: 0; 
   }
 
-  .button-home:hover, .button-home:focus {
-    background-color: #546a7b;
-    /*on hover or focus the buttons change color*/
-  }
-
-  .center {
+  article{
     text-align: center;
-
-  }
-  .banner {
-    background-color: #fdfdff;
-    padding: 1em;
-    margin-left: -1.5em;
-    margin-right: -1.5em;
-  }
-  .para-home {
-    width: 25em;
-    text-align: center;
-    display: inline-block;
-    padding-top: 0;
+    margin: 2rem 0; 
+    padding: 2rem; 
+    border: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
-  .button-book {
-    display: inline-block;
-    padding: 1em;
-    color: #FFF;
-    background-color: #62929e;
-    border-radius: 0.25em;
-    font-size: 1em;
-    text-decoration: none;
-    margin-top: 12em;
-    margin-bottom: .5em;
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-    /*controls the look and spacing of buttons*/
+  article.HomeInfo{
+  text-align: center;
+  background-color:none;
+  padding:15px 30px;
+  margin:25px auto;
+  width:100%;
+  overflow:auto;
+  border: 0;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
   }
 
-  .button-book:hover, .button-book:focus {
-    background-color: #546a7b;
-    /*on hover or focus the buttons change color*/
-  }
+  
+.mainContent{
+  background-color:white;
+  margin:0px 5px;
+  width:100%;
+  max-width:1000px;
+}
+.CameraDiscription {
+  margin: 200px;
+  width: 75%;
+  margin-top: 0;
+  margin-left:40px;
+  text-align: left;
 
-  body {
-    font-family: Verdana, sans-serif;
-    padding: 1em;
-    background-color: #c6c5b9;
-  }
+  /*padding-left: 20px;*/
 
-  p {
-    font-size: 1em;
-  }
+}
 
-  h1 {
-    font-size: 2em;
-  }
 
-  h2 {
-    font-size: 1.5em;
-  }
+  
+#news{
+    background-color:#F8F8F8;
+    margin-bottom:1em;
+}
+
+
+#contact{
+    text-align:left;
+    background-color:#F5F5F5;
+
+}
+
+#title{
+    margin-top:2em;
+    margin-left:3em;
+    margin-bottom:0em;
+    background-color:none;
+}
+
+
+
+
+p.left{
+    text-align:left;
+}
+p.right{
+    text-align:right;
+}
+h2.centering{
+    text-align:center;
+}
+
