@@ -39,6 +39,26 @@ input {
     padding-top: 0;
   }
 
+  .button-book {
+    display: inline-block;
+    padding: 1em;
+    color: #FFF;
+    background-color: #62929e;
+    border-radius: 0.25em;
+    font-size: 1em;
+    text-decoration: none;
+    margin-top: 12em;
+    margin-bottom: .5em;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    /*controls the look and spacing of buttons*/
+  }
+
+  .button-book:hover, .button-book:focus {
+    background-color: #546a7b;
+    /*on hover or focus the buttons change color*/
+  }
+
   body {
     font-family: Verdana, sans-serif;
     padding: 1em;
