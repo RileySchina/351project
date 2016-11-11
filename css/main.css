@@ -59,6 +59,26 @@ input {
   /*on hover or focus the buttons change color*/
 }
 
+.button {
+  display: inline-block;
+  padding: 1em;
+  color: #FFF;
+  background-color: #62929e;
+  border-radius: 0.25em;
+  font-size: 1em;
+  text-decoration: none;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  /*controls the look and spacing of buttons*/
+}
+
+.button:hover, .button:focus {
+  background-color: #546a7b;
+  /*on hover or focus the buttons change color*/
+}
+
 body {
   font-family: Verdana, sans-serif;
   padding: 1em;
@@ -103,11 +123,11 @@ img {/*styling image size and border*/
 
   article.HomeInfo{
   text-align: center;
-  background-color:none;
   padding:15px 30px;
   margin:25px auto;
   width:100%;
   overflow:auto;
+  background-color: #c6c5b9;
   border: 0;
   -moz-box-sizing:border-box;
   box-sizing:border-box;
@@ -115,10 +135,10 @@ img {/*styling image size and border*/
 
   
 .mainContent{
-  background-color:white;
   margin:0px 5px;
   width:100%;
   max-width:1000px;
+  background-color: #c6c5b9;
 }
 .CameraDiscription {
   margin: 200px;
@@ -134,14 +154,12 @@ img {/*styling image size and border*/
 
   
 #news{
-    background-color:#F8F8F8;
     margin-bottom:1em;
 }
 
 
 #contact{
     text-align:left;
-    background-color:#F5F5F5;
 
 }
 
@@ -149,7 +167,7 @@ img {/*styling image size and border*/
     margin-top:2em;
     margin-left:3em;
     margin-bottom:0em;
-    background-color:none;
+    
 }
 
 
