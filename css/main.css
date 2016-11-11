@@ -1,3 +1,7 @@
+input {
+  width: 20em;
+  font-size: 1.2em;
+}
 .button-home {
     display: inline-block;
     padding: 1em;
