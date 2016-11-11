@@ -1,0 +1,54 @@
+.button-home {
+    display: inline-block;
+    padding: 1em;
+    color: #FFF;
+    background-color: #62929e;
+    border-radius: 0.25em;
+    font-size: 3em;
+    text-decoration: none;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    /*controls the look and spacing of buttons*/
+  }
+
+  .button-home:hover, .button-home:focus {
+    background-color: #546a7b;
+    /*on hover or focus the buttons change color*/
+  }
+
+  .center {
+    text-align: center;
+
+  }
+  .banner {
+    background-color: #fdfdff;
+    padding: 1em;
+    margin-left: -1.5em;
+    margin-right: -1.5em;
+  }
+  .para-home {
+    width: 25em;
+    text-align: center;
+    display: inline-block;
+    padding-top: 0;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+    padding: 1em;
+    background-color: #c6c5b9;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
