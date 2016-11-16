@@ -39,8 +39,15 @@ section {
 #equipment-type {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;	
-	
+	justify-content: space-around;
+}
+
+#equipment-type img {
+	opacity: 0.5;
+}
+
+#equipment-type img:hover {
+	opacity: 1;
 }
 
 #equipment-type>div {
@@ -51,8 +58,8 @@ section {
 
 #equipment-type > div:hover {
 	background-color: #94C4C6;
-	
 }
+
 
 .img-frame-eq {
 	width: 200px;

@@ -37,7 +37,13 @@
 		
 		<div id = "equipment-type">
 
-			<div>
+
+
+
+			
+			
+			<div onclick = "select(1)" data-value = "1">
+>>>>>>> Stashed changes
 				<div class = "img-frame-eq">
 					<img src = "img/laptop.jpg">
 					
@@ -45,7 +51,7 @@
 				<p>Computers</p>
 			</div>
 			
-			<div>
+			<div  onclick = "select(2)" data-value = "2">
 				<div class = "img-frame-eq">
 					<img src = "img/audioBoom.jpg">
 					
@@ -54,7 +60,7 @@
 			</div>
 			
 			
-			<div>
+			<div onclick = "select(3)" data-value = "3">
 				<div class = "img-frame-eq">
 					<img src = "img/arduino.jpg">
 					
@@ -63,7 +69,7 @@
 			</div>
 			
 			
-			<div>
+			<div onclick = "select(4)" data-value = "4">
 				<div class = "img-frame-eq">
 					<img src = "img/toolkit.jpg">
 					
@@ -72,7 +78,7 @@
 			</div>
 			
 			
-			<div>
+			<div onclick = "select(5)" data-value = "5">
 				<div class = "img-frame-eq">
 					<img src = "img/nexus7.jpg">
 					
@@ -80,81 +86,54 @@
 				<p>Phones and Tablets</p>
 			</div>
 			
-			
-			
-			
 		</div>
 
 	</section>
 	
 	<section id = "item-list">
+	
+	</section>
 
-		<div class = "single-item">
-			<a href = "EquipmentSelection2.html">
-				<div class = "img-frame">
-					<img src = "img/camera.jpg">
-				</div>
+		
+	</body>
+	
+	<script>
+		
+			var clicked = false;
+			
+			//screw it this will do for now
+			var allItems = '<div class = "single-item">';
+			allItems += '<a href = "EquipmentSelection2.html">';
+			allItems += '<div class = "img-frame">';
+			allItems += '<img src = "img/camera.jpg"></div>';
 				
-				<div class = "item-desc">
-					<p>Camera</p>
-					<p>dSLR Camera
-						Includes 18-55mm f3.5-5.6 lens, 18 megapixel APS-C, 1920 x 1080 <br>
-						HD video at 24 (23.976)... </p>
-					<p>Availability: 5/5</p>
-				</div>
-			</a>
-		</div>
-		
-		<div class = "single-item">
-			<a href = "EquipmentSelection2.html">
-				<div class = "img-frame">
-					<img src = "img/camera.jpg">
-				</div>
+			allItems += '<div class = "item-desc"><p>Camera</p>';
+			allItems += '<p>dSLR Camera Includes 18-55mm f3.5-5.6 lens, 18 megapixel APS-C, 1920 x 1080 HD video at 24 (23.976)... </p>';
+			allItems += '<p>Availability: 5/5</p>';
+			allItems += '</div></a></div>';
+			
+			function select(number) {
 				
-				<div class = "item-desc">
-					<p>Camera</p>
-					<p>dSLR Camera
-						Includes 18-55mm f3.5-5.6 lens, 18 megapixel APS-C, 1920 x 1080 <br>
-						HD video at 24 (23.976)... </p>
-					<p>Availability: 5/5</p>
-				</div>
-			</a>
-		</div>
-		
-		<div class = "single-item">
-			<a href = "EquipmentSelection2.html">
-				<div class = "img-frame">
-					<img src = "img/camera.jpg">
-				</div>
+				if(!clicked) {
 				
-				<div class = "item-desc">
-					<p>Camera</p>
-					<p>dSLR Camera
-						Includes 18-55mm f3.5-5.6 lens, 18 megapixel APS-C, 1920 x 1080 <br>
-						HD video at 24 (23.976)... </p>
-					<p>Availability: 5/5</p>
-				</div>
-			</a>
-		</div>
-		
-		<div class = "single-item">
-			<a href = "EquipmentSelection2.html">
-				<div class = "img-frame">
-					<img src = "img/camera.jpg">
-				</div>
+					clicked = true;
+					console.log("AAAAAAAAA");
+					
+					for(var i = 0; i < 6; i++) {
+						document.getElementById("item-list").innerHTML += allItems;
+					}
+					
+				}
 				
-				<div class = "item-desc">
-					<p>Camera</p>
-					<p>dSLR Camera
-						Includes 18-55mm f3.5-5.6 lens, 18 megapixel APS-C, 1920 x 1080 <br>
-						HD video at 24 (23.976)... </p>
-					<p>Availability: 5/5</p>
-				</div>
-			</a>
-		</div>
+				
+				
+				/*
+				var e = document.getElementById("aaaa").getAttribute('data-value');
+
+				document.getElementById("demo").innerHTML = e;*/
+			}
 		
-		
-		
+<<<<<<< Updated upstream
 
 
 
@@ -162,4 +141,10 @@
 
 </body>
 
+=======
+	
+	</script>
+	
+	
+>>>>>>> Stashed changes
 </html>
