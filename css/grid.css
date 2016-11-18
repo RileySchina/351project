@@ -62,6 +62,12 @@
 making changes in css classes, and resizing the columns*/
 @media (min-width: 10em){
 	.grid-col-5of10{
+		width:100%;
+	}
+}
+
+@media (min-width: 40em){
+	.grid-col-5of10{
 		width:50%;
 	}
 }

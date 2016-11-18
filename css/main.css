@@ -183,3 +183,20 @@ h2.centering{
     text-align:center;
 }
 
+.scrollArea{
+    position: absolute;
+    border: 5px solid gray;
+    padding: 1em;
+    background: white;
+    height: 70%;
+    overflow-y: scroll;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right:1em;
+}
+.scrollArea img {
+  width: 20%;
+  height: 20%;
+  display:inline-block;
+}
+
